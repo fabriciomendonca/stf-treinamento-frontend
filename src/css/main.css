@@ -11,6 +11,14 @@
 	width: 87.5%;
 }
 
+.button{
+	height:  65px;
+}
+
+.button:hover{
+	background-position:0 -65px;
+}
+
 /** HEADER **/
 .header{
 	position: relative;
@@ -230,14 +238,6 @@
 	display: block;
 	text-indent: -50000px;
 	outline: none;
-}
-
-.button{
-	height:  65px;
-}
-
-.button:hover{
-	background-position:0 -65px;
 }
 
 .align-center{
