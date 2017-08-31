@@ -1,12 +1,103 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>STF - Treinamento Front End</title>
+	<meta charset="UTF-8">
+	<title>STF - Treinamento Front End</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/main.js"></script>
 </head>
 <body>
-  
+	<div class="main">
+		<div class="header m-t-40">
+			<h1 class="title image-replacement">Golden</h1>
+			<ul class="menu m-t-10">
+				<li class="m-l-0"><a href="#" onclick="goToPage('home'); return false;" class="image-replacement menu-home">Home</a></li>
+				<li><a href="#" onclick="goToPage('services'); return false;" class="image-replacement menu-services">Services</a></li>
+				<li><a href="#" onclick="goToPage('portfolio'); return false;" class="image-replacement menu-portfolio">Portfolio</a></li>
+				<li><a href="#"class="image-replacement menu-about">About</a></li>
+				<li class="m-r-0"><a href="#" class="image-replacement menu-contact">Contact</a></li>
+			</ul>
+		</div>
+		<div id="home" class="home">
+			<div class="home-content">
+				<h2 class="image-replacement home-title m-b-25">Welcome to our studio!</h2>
+				<h3 class="image-replacement home-subtitle m-t-25 m-b-25">It's nice to meet you</h3>
+				<div class="m-t-25">
+					<a href="#" class="image-replacement button button-tell-me-more pull-center">Tell me more</a>
+				</div>
+			</div>
+		</div>
+		<div id="services" class="services">
+			<div class="services-content content-area">
+				<h2 class="image-replacement services-title m-b-25">Services</h2>
+				<h3 class="image-replacement services-subtitle">Proin iaculis purus consequat sem cure.</h3>
+				<div class="services-list m-t-40">
+					<div class="services-service">
+						<img src="img/icon_ecommerce.png" alt="" />
+						<h4 class="service-ecommerce image-replacement m-t-25 m-b-25">E-commerce</h4>
+						<p>
+							Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+						</p>
+					</div>
+					<div class="services-service">
+						<img src="img/icon_responsive.png" alt="" />
+						<h4 class="service-responsive image-replacement m-t-25 m-b-25">Responsive Web</h4>
+						<p>
+							Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+						</p>
+					</div>
+					<div class="services-service">
+						<img src="img/icon_security.png" alt="" />
+						<h4 class="service-security image-replacement m-t-25 m-b-25">Web security</h4>
+						<p>
+							Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="portfolio" class="portfolio">
+			<div class="portfolio-content content-area">
+				<h2 class="image-replacement portfolio-title m-b-25">Services</h2>
+				<h3 class="image-replacement portfolio-subtitle">Proin iaculis purus consequat sem cure.</h3>
+				<div class="portfolio-cards">
+					<div class="portfolio-card portfolio-card-ebony">
+						<h4>Ebony & Ivory</h4>
+						<h5>Branding</h5>
+					</div>
+					<div class="portfolio-card portfolio-card-smart">
+						<h4>Smart Stationary</h4>
+						<h5>Print Design</h5>
+					</div>
+					<div class="portfolio-card portfolio-card-clever">
+						<h4>Clever Poster</h4>
+						<h5>Print Design</h5>
+					</div>
+					<div class="portfolio-card portfolio-card-vinyl">
+						<h4>Vinyl Record</h4>
+						<h5>Product Mock-Up</h5>
+					</div>
+					<div class="portfolio-card portfolio-card-treehouse">
+						<h4>Treehouse Template</h4>
+						<h5>Web Design</h5>
+					</div>
+					<div class="portfolio-card portfolio-card-burned">
+						<h4>Burned Logo</h4>
+						<h5>Branding</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p class="image-replacement copyright m-t-20">Copyright 2014 FreebiesXpress.com</p>
+			<ul class="social">
+				<li class="social-item"><a href="#" class="image-replacement social-item-twitter">Tiwitter</a></li>
+				<li class="social-item"><a href="#" class="image-replacement social-item-facebook">Facebook</a></li>
+				<li class="social-item"><a href="#" class="image-replacement social-item-pinterest">Pinterest</a></li>
+				<li class="social-item"><a href="#" class="image-replacement social-item-gplus">Google Plus</a></li>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>

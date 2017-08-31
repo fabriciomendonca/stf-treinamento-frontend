@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/fabriciomendonca/stf-treinamento-frontend/issues"
   },
-  "homepage": "https://github.com/fabriciomendonca/stf-treinamento-frontend#readme"
+  "homepage": "https://github.com/fabriciomendonca/stf-treinamento-frontend#readme",
+  "devDependencies": {
+    "express": "^4.15.4"
+  }
 }
