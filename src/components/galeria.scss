@@ -1,0 +1,32 @@
+#galeria {
+  padding: 20px;
+  width: 100vw;
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 100%;
+    overflow: hidden;
+    li {
+      background-color: #babaca;
+      cursor: pointer;
+      flex: 1 0 auto;
+      padding: 20px;
+      max-height: 200px;
+      max-width: 200px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+      &:hover {
+        max-height: 250px;
+        max-width: 250px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      transition: 500ms ease-out all;
+    }
+  }
+}

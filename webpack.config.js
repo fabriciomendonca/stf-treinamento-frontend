@@ -1,12 +1,15 @@
 const path = require('path');
+const webpack = require('webpack');
+const HtmlPlugin = require('html-webpack-plugin');
 
+const VENDORS = ['react', 'react-dom', 'axios', 'babel-polyfill'];
 module.exports = {
   entry: {
     bundle: [
-      'babel-polyfill',
-      path.join(__dirname, '/src/app.js'),
+      path.join(__dirname, '/src/app.jsx'),
       path.join(__dirname, '/src/app.scss')
-    ]
+    ],
+    vendor: VENDORS
   },
   output: {
     publicPath: '/',
@@ -14,13 +17,13 @@ module.exports = {
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['.js']
+    extensions: ['.js', '.jsx']
   },
   devtool: 'source-map',
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         use: 'babel-loader'
       },
       {
@@ -33,5 +36,15 @@ module.exports = {
     contentBase: 'dist/',
     publicPath: '/',
     port: 3000
-  }
+  },
+  plugins: [
+    new HtmlPlugin({
+      filename: 'index.html',
+      template: path.join(__dirname, '/src/index.html')
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      names: ['manifest', 'vendor'],
+      minChunks: 2
+    })
+  ]
 }
